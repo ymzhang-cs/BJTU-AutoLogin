@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # 获取无线网络接口名（假设接口名称为WLAN，你可以根据实际情况修改）
 interface=$(ip -o -4 addr list | grep "10\." | awk '{print $2}')
 if [ -z "$interface" ]; then
